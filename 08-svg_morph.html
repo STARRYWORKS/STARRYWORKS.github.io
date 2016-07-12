@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>BUTTON INC.</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="http://btn-inc.jp/">
+    <meta property="og:image" content="">
+    <meta property="og:type" content="">
+    <meta property="og:locale" content="">
+    <meta property="twitter:card" content="">
+    <meta property="twitter:description" content="">
+    <meta property="twitter:image:src" content="">
+    <meta property="twitter:creator" content="@btn-inc">
+    <meta property="twitter:site" content="http://btn-inc.jp/">
+    <meta property="twitter:title" content="BUTTON INC.">
+    <meta name="author" content="BUTTON INC.">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="../css/mock/10-svg_morph/style.css" type="text/css">
+  </head>
+  <body>
+    <div class="input-area">
+      <div class="input-box">
+        <p>
+          <label for="SVG1">SVG1</label>
+        </p>
+        <div>
+          <textarea id="SVG1" name="SVG1" cols="30" rows="10"></textarea>
+        </div>
+      </div>
+      <div class="input-box">
+        <p>
+          <label for="SVG2">SVG2</label>
+        </p>
+        <div>
+          <textarea id="SVG2" name="SVG2" cols="30" rows="10"></textarea>
+        </div>
+      </div>
+      <div class="input-box">
+        <p>
+          <label for="SVG3">SVG3</label>
+        </p>
+        <div>
+          <textarea id="SVG3" name="SVG3" cols="30" rows="10"></textarea>
+        </div>
+      </div>
+      <div class="input-box">
+        <p>
+          <label for="SVG4">SVG4</label>
+        </p>
+        <div>
+          <textarea id="SVG4" name="SVG4" cols="30" rows="10"></textarea>
+        </div>
+      </div>
+      <div class="ajust-area">
+        <div data-target="svg1to2" class="ajust-box">
+          <p class="duration">Duration
+            <input type="text" value="600">ms
+          </p>
+          <p class="ease">Easing
+            <select id="Svg1Easing1" name="Svg1Easing1">
+              <option value="Sine">Sine</option>
+              <option value="Quad">Quad</option>
+              <option value="Cubic">Cubic</option>
+              <option value="Quart">Quart</option>
+              <option value="Quint">Quint</option>
+              <option value="Expo">Expo</option>
+              <option value="Circ">Circ</option>
+              <option value="Back">Back</option>
+              <option value="Elastic">Elastic</option>
+              <option value="Bounce">Bounce</option>
+            </select>
+            <select id="Svg1Easing2" name="Svg1Easing2">
+              <option value="In">In</option>
+              <option value="Out">Out</option>
+              <option value="InOut">InOut</option>
+            </select>
+          </p>
+        </div>
+        <div data-target="svg2to3" class="ajust-box">
+          <p class="duration">Duration
+            <input type="text" value="600">ms
+          </p>
+          <p class="ease">Easing
+            <select id="Svg2Easing1" name="Svg2Easing1">
+              <option value="Sine">Sine</option>
+              <option value="Quad">Quad</option>
+              <option value="Cubic">Cubic</option>
+              <option value="Quart">Quart</option>
+              <option value="Quint">Quint</option>
+              <option value="Expo">Expo</option>
+              <option value="Circ">Circ</option>
+              <option value="Back">Back</option>
+              <option value="Elastic">Elastic</option>
+              <option value="Bounce">Bounce</option>
+            </select>
+            <select id="Svg2Easing2" name="Svg2Easing2">
+              <option value="In">In</option>
+              <option value="Out">Out</option>
+              <option value="InOut">InOut</option>
+            </select>
+          </p>
+        </div>
+        <div data-target="svg3to4" class="ajust-box">
+          <p class="duration">Duration
+            <input type="text" value="600">ms
+          </p>
+          <p class="ease">Easing
+            <select id="Svg3Easing1" name="Svg3Easing1">
+              <option value="Sine">Sine</option>
+              <option value="Quad">Quad</option>
+              <option value="Cubic">Cubic</option>
+              <option value="Quart">Quart</option>
+              <option value="Quint">Quint</option>
+              <option value="Expo">Expo</option>
+              <option value="Circ">Circ</option>
+              <option value="Back">Back</option>
+              <option value="Elastic">Elastic</option>
+              <option value="Bounce">Bounce</option>
+            </select>
+            <select id="Svg3Easing2" name="Svg3Easing2">
+              <option value="In">In</option>
+              <option value="Out">Out</option>
+              <option value="InOut">InOut</option>
+            </select>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="Canvas">
+      <canvas id="Play"></canvas>
+    </div>
+    <div class="controller">
+      <ul>
+        <li class="js-play"><a href="#">PLAY</a></li>
+        <li class="js-stop"><a href="#">STOP</a></li>
+        <li class="js-select">
+          <select id="Type" name="Type">
+            <option value="1">Once</option>
+            <option value="2">Loop</option>
+            <option value="3">Forwarfd & Back</option>
+          </select>
+        </li>
+      </ul>
+    </div>
+    <script type="text/javascript" src="/js/plugin.js"></script>
+    <script type="text/javascript" src="/js/mock/08-svg_morph/main.js"></script>
+  </body>
+</html>
